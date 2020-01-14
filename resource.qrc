@@ -1,0 +1,42 @@
+<RCC>
+    <qresource prefix="/">
+        <file>resources/styles/style.qss</file>
+        <file>resources/styles/images/arrow-bottom.png</file>
+        <file>resources/styles/images/arrow-down-disabled.png</file>
+        <file>resources/styles/images/arrow-down.png</file>
+        <file>resources/styles/images/arrow-left.png</file>
+        <file>resources/styles/images/arrow-up-disabled.png</file>
+        <file>resources/styles/images/arrow-up.png</file>
+        <file>resources/styles/images/checkbox_checked_disabled.png</file>
+        <file>resources/styles/images/checkbox_checked_focus.png</file>
+        <file>resources/styles/images/checkbox_checked.png</file>
+        <file>resources/styles/images/checkbox_unchecked_disabled.png</file>
+        <file>resources/styles/images/checkbox_unchecked_focus.png</file>
+        <file>resources/styles/images/checkbox_unchecked.png</file>
+        <file>resources/styles/images/checked.png</file>
+        <file>resources/styles/images/close-hover.png</file>
+        <file>resources/styles/images/close.png</file>
+        <file>resources/styles/images/menu_right_arrow.png</file>
+        <file>resources/styles/images/radio_checked_disabled.png</file>
+        <file>resources/styles/images/radio_checked_focus.png</file>
+        <file>resources/styles/images/radio_checked.png</file>
+        <file>resources/styles/images/radio_unchecked_disabled.png</file>
+        <file>resources/styles/images/radio_unchecked_focus.png</file>
+        <file>resources/styles/images/radio_unchecked.png</file>
+        <file>resources/Icon.icns</file>
+        <file>resources/Icon.rc</file>
+        <file>resources/icons.iconset/icon_16x16.png</file>
+        <file>resources/icons.iconset/icon_16x16@2x.png</file>
+        <file>resources/icons.iconset/icon_32x32.png</file>
+        <file>resources/icons.iconset/icon_32x32@2x.png</file>
+        <file>resources/icons.iconset/icon_64x64.png</file>
+        <file>resources/icons.iconset/icon_64x64@2x.png</file>
+        <file>resources/icons.iconset/icon_128x128.png</file>
+        <file>resources/icons.iconset/icon_128x128@2x.png</file>
+        <file>resources/icons.iconset/icon_256x256.png</file>
+        <file>resources/icons.iconset/icon_256x256@2x.png</file>
+        <file>resources/icons.iconset/icon_512x512.png</file>
+        <file>resources/icons.iconset/icon_512x512@2x.png</file>
+        <file>resources/icons.iconset/icon.png</file>
+    </qresource>
+</RCC>
