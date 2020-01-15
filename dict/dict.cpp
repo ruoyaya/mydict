@@ -106,7 +106,7 @@ QString Dict::loadArticle(QString word) {
                 if(entryText.size() > 0) {
                     articleText.append("<h2>" + entry->key.trimmed() + "</h2>");
                     if(m_dictInfoMap->contains(entry->dictId)) {
-                        articleText.append("<h4>《" + m_dictInfoMap->value(entry->dictId)->bookname().trimmed() + "》</h4>");
+                        articleText.append("<h4>&lt;" + m_dictInfoMap->value(entry->dictId)->bookname().trimmed() + "&gt;</h4>");
                     }
 
                     entryText.replace("\"","&quot;");

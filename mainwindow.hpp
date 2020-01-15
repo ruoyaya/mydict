@@ -24,6 +24,9 @@ public:
     void search(QString& word);
 protected:
       void contextMenuEvent(QContextMenuEvent *event);
+      void closeEvent(QCloseEvent*event);
+      void writeSettings();
+      void readSettings();
 private slots:
     void on_searchEdit_returnPressed();
     void on_actionAdd_triggered();
@@ -36,7 +39,6 @@ private slots:
     void changeDict(QAction* sender, qint32 dictId);
     void refreshDict();
     void about();
-
 private:
     Ui::MainWindow *ui;
     QFont font;

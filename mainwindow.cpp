@@ -7,6 +7,7 @@
 #include <QContextMenuEvent>
 #include <QMenu>
 #include <QMessageBox>
+#include <QSettings>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -32,6 +33,8 @@ MainWindow::MainWindow(QWidget *parent) :
     m_dictActionList = new QList<QAction*>();
 
     initDictActions();
+
+    readSettings();
 }
 
 MainWindow::~MainWindow()
@@ -40,6 +43,21 @@ MainWindow::~MainWindow()
     delete m_dict;
     delete m_popupMenu;
     delete m_seachWordList;
+}
+
+
+void MainWindow::writeSettings(){
+    QSettings settings("mydict.yikeo.com", "mydict");
+    settings.setValue("pos", pos());
+    settings.setValue("size", size());
+}
+
+void MainWindow::readSettings(){
+    QSettings settings("mydict.yikeo.com","mydict");
+    QPoint pos = settings.value("pos", QPoint(200, 200)).toPoint();
+    QSize size = settings.value("size", QSize(700, 350)).toSize();
+    resize(size);
+    move(pos);
 }
 
 void MainWindow::about(){
@@ -122,6 +140,12 @@ void MainWindow::initDictActions()
 void MainWindow::contextMenuEvent(QContextMenuEvent *event)
 {
     m_popupMenu->popup(event->globalPos());
+    event->accept();
+}
+
+
+void MainWindow::closeEvent(QCloseEvent* event){
+    writeSettings();
     event->accept();
 }
 
